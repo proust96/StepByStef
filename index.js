@@ -1,8 +1,8 @@
 var express = require('express');
 var session = require('express-session');
-var login = require('./login.js');
-var regles = require('./regles.js');
-var etape = require('./etape.js');
+var login = require('./routes/login.js');
+var regles = require('./routes/regles.js');
+var etape = require('./routes/etape.js');
 
 var app = express();
 app.use(session({secret:'XASDASDA'}));

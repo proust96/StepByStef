@@ -4,9 +4,9 @@
        "etape_id":1,
        "reponse":"Chez Stef, il y a 3 catégories de règles d'Or",
        "images_ok":[
-            {"src":"#"},
-            {"src":"#"},
-            {"src":"#"}
+            "/public/img/stef1.png",
+            "/public/img/stef2.png",
+            "/public/img/stef3.png"
        ],
        "images_ko":[]
     },
@@ -14,13 +14,8 @@
         "id":2,
         "etape_id":1,
         "reponse":"Je me stationne toujours en marche arrière",
-        "images_ok":[
-            {"src":"#"}
-        ],
-        "images_ko":[
-            {"src":"#"},
-            {"src":"#"}
-        ]
+        "images_ok":["/public/img/stef1.png","/public/img/stef4.png"],
+        "images_ko":["/public/img/stef1.png"]
      }
 ]
 }

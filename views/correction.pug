@@ -5,5 +5,12 @@ block etape_content
         alert("#{ok}");
     .etape_content  
         p=correction.reponse
+    .images
+        if ok
+            each val in correction.images_ok
+                img(src=val)
+        else
+            each val in correction.images_ko
+                img(src=val)
     form(method='POST' action='/corrections')
         button(type='submit') Ok

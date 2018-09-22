@@ -7,6 +7,9 @@ block content
                 if user.etape_actuelle == 1 && etape.id === 1
                     .etape-item-clicable
                         a(href="/etape/1")=etape.titre
+                else if user.etape_actuelle === 8 && etape.id===2
+                    .etape-item-clicable
+                        a(href="/avancement/9")=etape.titre
                 else if user.etape_actuelle === 9 && etape.id===9
                     .etape-item-clicable
                         a(href="/etape/9")=etape.titre
@@ -16,6 +19,8 @@ block content
         .container-avancement
             if user.etape_actuelle == 1
                 img(src="/public/img/0pourcent.jpg")
+            else if user.etape_actuelle == 8
+                img(src="/public/img/11pourcent.jpg")
             else if user.etape_actuelle == 9
                 img(src="/public/img/88pourcent.jpg")
             

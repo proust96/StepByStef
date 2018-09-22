@@ -119,4 +119,7 @@ color: #0082D1;
     height: 50px;
     border-top: solid 1px black;
 }
-
+.images_correction img{
+    height: 400px;
+    margin: 30px; 
+}

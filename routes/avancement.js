@@ -15,5 +15,11 @@ router.get('/', function(req, res){
     res.render('avancement', {etapes:etapes.etapes,user:user});
 });
 
+router.get('/:ava', function(req, res){
+    var ssn = req.session; 
+    ssn.user.etape_actuelle = 9;
+    res.redirect('/avancement');
+});
+
 
 module.exports = router;

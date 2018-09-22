@@ -30,7 +30,7 @@ router.get('/validation', function(req,res){
             if (ssn.user.etape_actuelle != 9)
             {
                 ssn.user.question_actuelle = 1;
-                ssn.user.etape_actuelle = 9;
+                ssn.user.etape_actuelle = 8;
                 ssn.user.etapes_completees = [1,2,3,4,5,6,7,8];
             }else{
                 ssn.user.fini = true;

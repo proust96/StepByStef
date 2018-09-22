@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/proust96/StepByStef#readme",
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "express-session": "^1.15.6",
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3"
   },
   "dependencies": {
     "express": "^4.16.3"

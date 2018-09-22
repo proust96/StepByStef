@@ -1,6 +1,6 @@
 var express = require('express');
 var session = require('express-session');
-var users = require('./users.json')
+var users = require('./ressources/users.json')
 var router = express.Router();
 
 var ssn;
@@ -10,8 +10,12 @@ router.use(session({secret:'XASDASDA'}));
 router.post('/', function(req, res){
     //faire le login
     ssn = req.session; 
-    ssn.email = req.body.email;
-    console.log(ssn.email);
+    let user = users.filter(u => u.matricule === req.body.matricule)[0];
+    console.log(ssn);
+    ssn.matricule = user.matricule;
+    ssn.nom = user.nom;
+    console.log(ssn);
+    res.redirect('/profile');
 });
 
 module.exports = router;

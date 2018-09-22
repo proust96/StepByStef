@@ -1,7 +1,8 @@
 var express = require('express');
 var session = require('express-session');
-var bodyParser = require('body-parser')
 var login = require('./login.js');
+var profile = require('./profile.js');
+var etape = require('./etape.js');
 
 var app = express();
 app.use(session({secret:'XASDASDA'}));
@@ -19,6 +20,10 @@ app.get('/', function(req, res){
  });
 
 app.use('/login', login);
+
+app.use('/profile', profile);
+
+app.use('/etape', etape);
 
 
 app.listen(3000, function () {

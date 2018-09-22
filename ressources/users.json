@@ -1,7 +1,9 @@
 [
     {
-        "name": "Paul Henri",
-        "email": "paul.henri@stef.com",
-        "pole": "Logistique"
+        "prenom": "Paul",
+        "nom": "Henri",
+        "matricule": "157642",
+        "site": "Stef Transport Athis-Mons",
+        "etape_actuelle": 1
     }
 ]

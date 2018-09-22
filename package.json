@@ -23,7 +23,8 @@
     "nodemon": "^1.18.4",
     "pdfkit": "^0.8.3",
     "pug": "^2.0.3",
-    "signature_pad": "^3.0.0-beta.3"
+    "signature_pad": "^3.0.0-beta.3",
+    "sweetalert2": "^7.27.0"
   },
   "dependencies": {
     "express": "^4.16.3"

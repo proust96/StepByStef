@@ -1,11 +1,13 @@
 var express = require('express');
 var session = require('express-session');
+var swal = require('sweetalert2');
 var login = require('./routes/login.js');
 var regles = require('./routes/regles.js');
 var etape = require('./routes/etape.js');
 var export_route = require('./routes/export.js');
 var avancement = require('./routes/avancement.js');
-var questions = require('./routes/questions.js')
+var questions = require('./routes/questions.js');
+var corrections = require('./routes/corrections.js')
 
 var app = express();
 app.use(session({secret:'XASDASDA'}));
@@ -34,6 +36,8 @@ app.use('/questions', questions);
 app.use('/export', export_route);
 
 app.use('/avancement', avancement);
+
+app.use('/corrections', corrections);
 
 
 app.listen(3000, function () {

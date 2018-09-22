@@ -2,20 +2,9 @@ extends etape.pug
 
 block etape_content
     .etape_content  
-        p Voici la question
-        form(method='POST' action='/valider')
-            input(type="radio", value="1", checked=true)
-            | TEXT1
-            br
-            input(type="radio", value="A", checked=false)
-            | TEXT2
-            br
-            input(type="radio", value="B", checked=false)
-            | TEXT3
-            br
-            input(type="radio", value="C", checked=false)
-            | TEXT4
-            br
+        p=question.question_libelle
+        form(method='GET' action='/questions/validation')
+            each i in question.question_options
+                input(type="radio", value=i.id, id=i.id, name="answers", checked=false)
+                label(for=i.id)=i.libelle
             button(type='submit') Valider
-    
-        button(type='submit') Valider

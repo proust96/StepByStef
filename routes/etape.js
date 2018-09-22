@@ -10,9 +10,8 @@ router.use(session({secret:'XASDASDA'}));
 
 router.get('/:etapeId', function(req, res){
     ssn = req.session;
-    var etapeId = req.params;
-    var etape = etapes.etapes[0];
-    console.log(etape);
+    var etapeId = req.params.etapeId;
+    var etape = etapes.etapes.filter(x => x.id == etapeId)[0];
     res.render('etape_video',{etape:etape});
     
 });

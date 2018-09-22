@@ -5,24 +5,10 @@
         "username": "henri.p",
         "matricule": "157642",
         "site": "Stef Transport Athis-Mons",
-        "vu_regles": false,
         "etape_actuelle": 1,
-        "etapes_completees":[
-
-        ],
-        "fini": false
-    },
-    {
-        "prenom": "Paul",
-        "nom": "Henri",
-        "username": "henri.p",
-        "matricule": "157642",
-        "site": "Stef Transport Athis-Mons",
-        "vu_regles": true,
-        "etape_actuelle": 1,
-        "etapes_completees":[
-
-        ],
+        "question_actuelle": 1,
+        "etapes_completees":[],
+        "rate": false,
         "fini": false
     }
 ]

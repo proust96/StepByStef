@@ -1,0 +1,9 @@
+extends etape.pug
+
+block etape_content
+    script.
+        alert("#{ok}");
+    .etape_content  
+        p=correction.reponse
+    form(method='POST' action='/corrections')
+        button(type='submit') Ok

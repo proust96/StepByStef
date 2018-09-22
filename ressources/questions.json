@@ -2,59 +2,32 @@
     {
        "id":1,
        "etape_id":1,
-       "question_libelle":"?????????",
+       "question_libelle":"Combien y a-t-il de catégories de règles d'Or chez Stef ?",
        "question_options":[
            {"id":"A",
-            "libelle":"AAAAAAAAAAA"},
+            "libelle":"2"},
             {"id":"B",
-            "libelle":"BBBBBBBBBBB"},
+            "libelle":"3"},
             {"id":"C",
-            "libelle":"CCCCCCCCCCC"}
+            "libelle":"4"},
+            {"id":"D",
+            "libelle":"5"}
        ],
-       "reponse":"A"
+       "reponse":"B"
     },
     {
         "id":2,
         "etape_id":1,
-        "question_libelle":"?????????2",
+        "question_libelle":"Lors de mon arrivée sur le parking du personnel :",
         "question_options":[
             {"id":"A",
-             "libelle":"AAAAAAAAAAA"},
+             "libelle":"Je dois me stationner dans le sens où je me sens le plus à l'aise"},
              {"id":"B",
-             "libelle":"BBBBBBBBBBB"},
+             "libelle":"Je dois me stationner en marche arrière"},
              {"id":"C",
-             "libelle":"CCCCCCCCCCC"}
+             "libelle":"Je dois me stationner en marche avant"}
         ],
-        "reponse":"C"
-     },
-     {
-        "id":3,
-        "etape_id":2,
-        "question_libelle":"?????????3",
-        "question_options":[
-            {"id":"A",
-             "libelle":"AAAAAAAAAAA"},
-             {"id":"B",
-             "libelle":"BBBBBBBBBBB"},
-             {"id":"C",
-             "libelle":"CCCCCCCCCCC"}
-        ],
-        "reponse":"C"
-     }
-    ,
-    {
-        "id":4,
-        "etape_id":2,
-        "question_libelle":"?????????4",
-        "question_options":[
-            {"id":"A",
-             "libelle":"AAAAAAAAAAA"},
-             {"id":"B",
-             "libelle":"BBBBBBBBBBB"},
-             {"id":"C",
-             "libelle":"CCCCCCCCCCC"}
-        ],
-        "reponse":"A"
+        "reponse":"B"
      }
 ]
 }

@@ -3,4 +3,7 @@ extends template.pug
 block content
     .etapes
         each val in etapes
-            .etape= val.titre
+            .etape
+            a:img(src="/public/img/implementee.jpg") 
+            p=val.titre
+            

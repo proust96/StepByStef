@@ -1,0 +1,21 @@
+extends etape.pug
+
+block etape_content
+    .etape_content  
+        p Voici la question
+        form(method='POST' action='/valider')
+            input(type="radio", value="1", checked=true)
+            | TEXT1
+            br
+            input(type="radio", value="A", checked=false)
+            | TEXT2
+            br
+            input(type="radio", value="B", checked=false)
+            | TEXT3
+            br
+            input(type="radio", value="C", checked=false)
+            | TEXT4
+            br
+            button(type='submit') Valider
+    
+        button(type='submit') Valider

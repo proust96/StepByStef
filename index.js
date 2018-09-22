@@ -5,6 +5,7 @@ var regles = require('./routes/regles.js');
 var etape = require('./routes/etape.js');
 var export_route = require('./routes/export.js');
 var avancement = require('./routes/avancement.js');
+var questions = require('./routes/questions.js')
 
 var app = express();
 app.use(session({secret:'XASDASDA'}));
@@ -27,6 +28,8 @@ app.use('/login', login);
 app.use('/regles', regles);
 
 app.use('/etape', etape);
+
+app.use('/questions', questions);
 
 app.use('/export', export_route);
 

@@ -2,4 +2,9 @@ extends etape.pug
 
 block etape_content
     .etape_content
-        video(src="")
+       
+        p #{etape.titre}
+        video(src=etape.video)
+
+        form(method='POST' action='/questions')
+            button(type='submit') Questions

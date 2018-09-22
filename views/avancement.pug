@@ -1,9 +1,11 @@
 extends template.pug
 
 block content
-    .etapes
-        each val in etapes
-            .etape
-            a:img(src="/public/img/implementee.jpg") 
-            p=val.titre
+    .top-container
+        .container
+            each val in etapes
+                .etape_item
+                        p=val.titre
+        .container-avancement
+            img(src="/public/img/0pourcent.jpg")
             

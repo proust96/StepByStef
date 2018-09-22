@@ -2,7 +2,39 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial;
+    
 }
+.top-container{
+    flex-direction: column;
+}
+.container {
+    flex-direction: column;
+    width: 50%;
+    float: left
+}
+.container-avancement{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    float: right;
+    text-align: center!important;
+    padding-top: 50px;
+    width: 50%;
+}
+
+.etape_item{
+    display: flex;
+    flex-direction: row;
+    border: 3px rgb(32, 34, 36);
+    border-radius: 15px;
+    background-color: rgb(181, 194, 204);
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
 .signin_form_container{
     display: flex;
     align-items: center;
@@ -69,3 +101,4 @@ color: #0082D1;
     height: 50px;
     border-top: solid 1px black;
 }
+

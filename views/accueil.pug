@@ -1,13 +1,14 @@
 extends template.pug
 
 block content
-    .signin_form
-        h1 Se connecter
-        form(method='POST' action='/login')
-            div.form-group
-                label(for='username') Identifiant
-                input.form-control(type='text' id='username' placeholder='nom.p' name='username')
-            div.form-group
-                label(for='password') Password
-                input.form-control(type='password' id='password' placeholder='password' name='password')
-            button(type='submit') Log in 
+    .signin_form_container
+        .signin_form
+            h1 Se connecter
+            form(method='POST' action='/login')
+                div.form-group
+                    label(for='username') Identifiant
+                    input.form-control(type='text' id='username' placeholder='nom.p' name='username')
+                div.form-group
+                    label(for='password') Password
+                    input.form-control(type='password' id='password' placeholder='password' name='password')
+                button(type='submit') Log in 

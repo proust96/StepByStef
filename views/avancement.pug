@@ -3,9 +3,19 @@ extends template.pug
 block content
     .top-container
         .container
-            each val in etapes
-                .etape_item
-                        p=val.titre
+            each etape in etapes
+                if user.etape_actuelle == 1 && etape.id === 1
+                    .etape-item-clicable
+                        a(href="/etape/1")=etape.titre
+                else if user.etape_actuelle === 9 && etape.id===9
+                    .etape-item-clicable
+                        a(href="/etape/9")=etape.titre
+                else
+                    .etape-item
+                        a=etape.titre
         .container-avancement
-            img(src="/public/img/0pourcent.jpg")
+            if user.etape_actuelle == 1
+                img(src="/public/img/0pourcent.jpg")
+            else if user.etape_actuelle == 9
+                img(src="/public/img/88pourcent.jpg")
             

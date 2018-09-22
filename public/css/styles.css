@@ -22,17 +22,35 @@ body{
     width: 50%;
 }
 
-.etape_item{
+.etape-item a{
     display: flex;
     flex-direction: row;
     border: 3px rgb(32, 34, 36);
     border-radius: 15px;
     background-color: rgb(181, 194, 204);
     margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    padding-left: 20px;
+    padding: 10px;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.etape-item-clicable a{
+    display: flex;
+    flex-direction: row;
+    border: 3px rgb(32, 34, 36);
+    border-radius: 15px;
+    background-color: rgb(153, 166, 175);
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 20px;
+    padding: 10px;
     justify-content: flex-start;
+    text-decoration: none;
 }
 
 .signin_form_container{

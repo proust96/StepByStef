@@ -8,6 +8,7 @@ var ssn;
 router.use(session({secret:'XASDASDA'}));
 
 router.get('/', function(req, res){
+    ssn = req.session; 
     res.render('etape_video');
 });
 

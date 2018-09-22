@@ -8,7 +8,9 @@ var ssn;
 router.use(session({secret:'XASDASDA'}));
 
 router.get('/', function(req, res){
-    res.render('regles');
+    ssn = req.session; 
+    ssn.user.vu_regles = true;
+    res.render('regles', {user:ssn.user});
 });
 
 module.exports = router;

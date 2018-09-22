@@ -19,7 +19,9 @@
   "devDependencies": {
     "body-parser": "^1.18.3",
     "express-session": "^1.15.6",
+    "html-pdf": "^2.2.0",
     "nodemon": "^1.18.4",
+    "pdfkit": "^0.8.3",
     "pug": "^2.0.3"
   },
   "dependencies": {

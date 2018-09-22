@@ -2,8 +2,14 @@
     {
         "prenom": "Paul",
         "nom": "Henri",
+        "username": "henri.p",
         "matricule": "157642",
         "site": "Stef Transport Athis-Mons",
-        "etape_actuelle": 1
+        "vu_regles": false,
+        "etape_actuelle": 1,
+        "etapes_completees":[
+
+        ],
+        "fini": false
     }
 ]

@@ -8,7 +8,9 @@ var ssn;
 router.use(session({secret:'XASDASDA'}));
 
 router.get('/', function(req, res){
-    res.render('etape');
+    ssn = req.session; 
+    let num_etape = ssn.user.etape_actuelle;
+    res.render('etape_video');
 });
 
 module.exports = router;

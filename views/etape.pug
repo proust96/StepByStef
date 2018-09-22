@@ -1,6 +1,14 @@
-doctype html
-html
-   head
-      title Hello Pug
-   body
-      p etape
+extends template.pug
+
+mixin etape_top()
+    .etape_top
+        h1=etape_titre
+
+mixin etape_bottom()
+    .etape_bottom
+        a(href="") Quiz
+
+block content
+    +etape_top
+    block etape_content
+    +etape_bottom

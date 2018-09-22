@@ -1,7 +1,7 @@
 var express = require('express');
 var session = require('express-session');
 var login = require('./login.js');
-var profile = require('./profile.js');
+var regles = require('./regles.js');
 var etape = require('./etape.js');
 
 var app = express();
@@ -16,12 +16,12 @@ var ssn;
 
 
 app.get('/', function(req, res){
-    res.render('regles');
+    res.render('accueil');
  });
 
 app.use('/login', login);
 
-app.use('/profile', profile);
+app.use('/regles', regles);
 
 app.use('/etape', etape);
 

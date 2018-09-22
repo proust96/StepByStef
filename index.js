@@ -1,10 +1,12 @@
 var express = require('express');
 var session = require('express-session');
-var accueil = require('./accueil.js');
+var bodyParser = require('body-parser')
 var login = require('./login.js');
 
 var app = express();
 app.use(session({secret:'XASDASDA'}));
+app.use(express.json());       // to support JSON-encoded bodies
+app.use(express.urlencoded()); // to support URL-encoded bodies
 
 app.set('view engine', 'pug');
 app.set('views','./views');

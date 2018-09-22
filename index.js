@@ -6,6 +6,7 @@ var etape = require('./etape.js');
 
 var app = express();
 app.use(session({secret:'XASDASDA'}));
+app.use('/public', express.static(__dirname + '/public'));
 app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
 

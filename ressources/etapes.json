@@ -1,0 +1,51 @@
+{"etapes":[
+    {
+        "id": 1,
+        "implementee": true,
+        "titre": "Règles d'Or S&ST du groupe Stef",
+        "type": "video",
+        "video_src": "#",
+        "texte": ""
+    },
+    {
+        "id": 2,
+        "implementee": false,
+        "titre": "Zones de vie / local social"
+    },
+    {
+        "id": 3,
+        "implementee": false,
+        "titre": "Affichages obligatoires"
+    },
+    {
+        "id": 4,
+        "implementee": false,
+        "titre": "Pointage des heures de travail"
+    },
+    {
+        "id": 5,
+        "implementee": false,
+        "titre": "Evacuation des locaux / point de rassemblement extérieur"
+    },
+    {
+        "id": 6,
+        "implementee": false,
+        "titre": "Règles sur le parking VL"
+    },
+    {
+        "id": 7,
+        "implementee": false,
+        "titre": "Equipement de Protection Individuelle"
+    },
+    {
+        "id": 8,
+        "implementee": false,
+        "titre": "Evolution sur la plateforme"
+    },
+    {
+        "id": 9,
+        "implementee": false,
+        "titre": "Local de charge"
+    }
+]
+}

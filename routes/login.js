@@ -12,12 +12,7 @@ router.post('/', function(req, res){
     ssn = req.session; 
     let user = users.filter(u => u.username === req.body.username)[0];
     ssn.user = user;
-    if (!user.vu_regles){
-        res.redirect('/regles');
-    }
-    else{
-        res.redirect('/etape');
-    } 
+    res.redirect('/avancement');
     
 });
 

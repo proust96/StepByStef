@@ -16,7 +16,7 @@ var ssn;
 
 
 app.get('/', function(req, res){
-    res.render('accueil');
+    res.render('regles');
  });
 
 app.use('/login', login);

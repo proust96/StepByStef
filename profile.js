@@ -8,7 +8,8 @@ var ssn;
 router.use(session({secret:'XASDASDA'}));
 
 router.get('/', function(req, res){
-    res.render('profile');
+    ssn = req.session; 
+    res.render('profile', {nom:ssn.user.nom});
 });
 
 module.exports = router;

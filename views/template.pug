@@ -1,0 +1,19 @@
+mixin header()
+    .test
+        p header
+
+mixin footer()
+    .test
+        p footer
+
+doctype html
+html
+    head
+        title=titre
+    body
+        +header()
+        block content
+        +footer()
+
+
+

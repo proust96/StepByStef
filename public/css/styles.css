@@ -156,3 +156,32 @@ color: #0082D1;
     margin-left: 20px;
     vertical-align: bottom;
 }
+
+.message-ok{
+    border: 3px rgb(32, 34, 36);
+    border-radius: 15px;
+    background-color: rgb(95, 226, 128);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    padding-left: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.message-erreur{
+    border: 3px rgb(32, 34, 36);
+    border-radius: 15px;
+    background-color: rgb(189, 48, 48);
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    padding-left: 20px;
+    padding: 5px;
+    text-decoration: none;
+}

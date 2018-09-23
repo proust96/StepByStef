@@ -7,9 +7,13 @@ block etape_content
         p=correction.reponse
     .images_correction
         if ok
+            .message-ok
+                p TRÈS BIEN
             each val in correction.images_ok
                 img(src=val)
         else
+            .message-erreur
+                p MAL REPONDU
             each val in correction.images_ko
                 img(src=val)
     form(method='POST' action='/corrections')

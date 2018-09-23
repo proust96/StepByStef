@@ -12,7 +12,12 @@ router.get('/:etapeId', function(req, res){
     ssn = req.session;
     var etapeId = req.params.etapeId;
     var etape = etapes.etapes.filter(x => x.id == etapeId)[0];
-    res.render('etape_video',{etape:etape});
+    if (etapeId == 9){
+        res.redirect('/questions');
+    }
+    else{
+        res.render('etape_video',{etape:etape});
+    }
     
 });
 

@@ -16,6 +16,20 @@
         "reponse":"Je me stationne toujours en marche arrière",
         "images_ok":["/public/img/stef1.png","/public/img/stef4.png"],
         "images_ko":["/public/img/stef1.png"]
-     }
+     },
+     {
+         "id":1,
+         "etape_id":9,
+         "reponse":"Le local de charge est une zone à risque spécifique",
+         "images_ok":["/public/img/picto1.jpg","/public/img/picto2.jpg","/public/img/picto3.jpg"],
+         "images_ko":[]
+      },
+      {
+          "id":2,
+          "etape_id":9,
+          "reponse":"Vous connaissez à présent l'emplacement du rince oeil",
+          "images_ok":["/public/img/oeil.jpg"],
+          "images_ko":[]
+       }
 ]
 }

@@ -1,0 +1,17 @@
+extends template.pug
+
+block content
+    style.
+        p{
+            text-align:center;
+            margin-top:50px;
+        }
+    p Vous avez fini le chemin d'intégration.
+    script.
+        var file = '../public/files/export_henri-pol.pdf';
+        var a = document.createElement("a");
+        a.style = "display: none";
+        a.href = file;
+        a.download = "export";      
+        document.body.appendChild(a);
+        a.click();

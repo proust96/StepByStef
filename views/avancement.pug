@@ -12,6 +12,10 @@ html
             body{
                 overflow-y:initial;
             }
+        script.
+            if (#{user.etape_actuelle}==10){
+                setTimeout(function(){ window.location.replace("/signature"); }, 3000);
+            }
     body
         .template_header.template_header_avancement
             img(src="/public/img/logo.jpg")

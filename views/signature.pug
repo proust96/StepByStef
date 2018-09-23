@@ -1,0 +1,37 @@
+extends template.pug
+  
+
+block content
+    .wrapper
+        canvas.signature-pad#signature-pad(width="1000px", height="600px")
+        style.
+            body::before {
+                width:0;
+                height:0;
+            }
+            body{
+                overflow-y:initial;
+            }
+            form{
+                text-align:center;
+            }
+        script.
+            var signaturePad = new SignaturePad(document.getElementById('signature-pad'), {
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            penColor: 'rgb(0, 0, 0)'
+            });
+            var saveButton = document.getElementById('save');
+            var cancelButton = document.getElementById('clear');
+
+            saveButton.addEventListener('click', function (event) {
+            var data = signaturePad.toDataURL('image/png');
+
+            // Send data to server instead...
+            window.open(data);
+            });
+
+            cancelButton.addEventListener('click', function (event) {
+            signaturePad.clear();
+            });
+    form(method='GET' action='/fin')
+        button(type=submit)#save Signer

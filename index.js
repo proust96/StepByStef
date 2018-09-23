@@ -42,9 +42,12 @@ app.use('/avancement', avancement);
 
 app.use('/corrections', corrections);
 
-app.get('/download', function(req, res){
-  var file = __dirname + '/public/files/export_henri-pol.pdf';
-  res.download(file);
+app.get('/fin', function(req, res){
+  res.render('fin');
+});
+
+app.get('/signature', function(req, res){
+  res.render('signature');
 });
 
 

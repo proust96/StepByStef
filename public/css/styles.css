@@ -14,13 +14,9 @@ body{
     float: left
 }
 .container-avancement{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    float: right;
-    text-align: center!important;
-    padding-top: 50px;
-    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 20px;
 }
 
 .connexion-images{
@@ -36,34 +32,9 @@ body{
 }
 
 .etape-item a{
-    display: flex;
-    flex-direction: row;
-    border: 3px rgb(32, 34, 36);
-    border-radius: 15px;
-    background-color: rgb(181, 194, 204);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px; 
-    padding-left: 20px;
-    padding: 10px;
-    justify-content: flex-start;
     text-decoration: none;
-}
-
-.etape-item-clicable a{
-    display: flex;
-    flex-direction: row;
-    border: 3px rgb(32, 34, 36);
-    border-radius: 15px;
-    background-color: rgb(153, 166, 175);
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 20px;
-    padding: 10px;
-    justify-content: flex-start;
-    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
 .signin_form_container{
@@ -184,4 +155,55 @@ color: #0082D1;
     padding-left: 20px;
     padding: 5px;
     text-decoration: none;
+}
+.top-container .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 170px);
+}
+.etape-item {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+    background-color: gray;
+    margin: 60px 30;
+}
+.template_header_avancement{
+    position: relative;
+    height: 150px;
+}
+.top-container_avancement .container{
+    float: initial;
+    width:100%;
+}
+.etape-item {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+    background-color: #e1e1e1;
+    margin: 60px 30;
+    text-transform: uppercase;
+    text-align: center;
+}
+.etape-item p {
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: solid 2px white;
+    border-radius: 40px;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 40px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.etape-item-clicable {
+    background-color: #024f9fc4;
+}
+.etape-item-done {
+    background-color: #4caf50bd;
 }

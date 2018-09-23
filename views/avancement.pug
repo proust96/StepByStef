@@ -1,26 +1,38 @@
-extends template.pug
-
-block content
-    .top-container
-        .container
-            each etape in etapes
-                if user.etape_actuelle == 1 && etape.id === 1
-                    .etape-item-clicable
-                        a(href="/etape/1")=etape.titre
-                else if user.etape_actuelle === 8 && etape.id===2
-                    .etape-item-clicable
-                        a(href="/avancement/9")=etape.titre
-                else if user.etape_actuelle === 9 && etape.id===9
-                    .etape-item-clicable
-                        a(href="/etape/9")=etape.titre
-                else
-                    .etape-item
-                        a=etape.titre
-        .container-avancement
-            if user.etape_actuelle == 1
-                img(src="/public/img/0pourcent.jpg")
-            else if user.etape_actuelle == 8
-                img(src="/public/img/11pourcent.jpg")
-            else if user.etape_actuelle == 9
-                img(src="/public/img/88pourcent.jpg")
+link(href='/public/css/styles.css', rel='stylesheet')
+ 
+doctype html
+html
+    head
+        title=titre
+    
+    body
+        .template_header.template_header_avancement
+            img(src="/public/img/logo.jpg")
+            .container-avancement
+                if user.etape_actuelle == 1
+                    img(src="/public/img/0pourcent.jpg")
+                else if user.etape_actuelle == 8
+                    img(src="/public/img/11pourcent.jpg")
+                else if user.etape_actuelle == 9
+                    img(src="/public/img/88pourcent.jpg")
+        block content
+            .top-container_avancement.top-container
+                .container
+                    each etape in etapes
+                        if user.etape_actuelle == 1 && etape.id === 1
+                            .etape-item-clicable.etape-item
+                                p=etape.id
+                                a(href="/etape/1")=etape.titre
+                        else if user.etape_actuelle === 8 && etape.id===2
+                            .etape-item-clicable.etape-item
+                                p=etape.id
+                                a(href="/avancement/9")=etape.titre
+                        else if user.etape_actuelle === 9 && etape.id===9
+                            .etape-item-clicable.etape-item
+                                p=etape.id
+                                a(href="/etape/9")=etape.titre
+                        else
+                            .etape-item
+                                p=etape.id
+                                a=etape.titre
             

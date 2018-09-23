@@ -20,7 +20,7 @@
      {
          "id":1,
          "etape_id":9,
-         "reponse":"Le local de charge est une zone à risque spécifique",
+         "reponse":"Le local de charge est une zone à risques spécifiques",
          "images_ok":["/public/img/picto1.jpg","/public/img/picto2.jpg","/public/img/picto3.jpg"],
          "images_ko":[]
       },

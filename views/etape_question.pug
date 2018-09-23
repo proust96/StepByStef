@@ -15,7 +15,7 @@ block etape_content
         form(method='GET' action='/questions/validation')
             if question.etape_id == 9 && question.id == 2
                 each val in question.question_images 
-                    img(src=val)
+                    img(src=val,width="250px")
             else
                 each i in question.question_options
                     if question.etape_id == 9
@@ -28,4 +28,13 @@ block etape_content
                         .radiogroup
                             input(type="radio", value=i.id, id=i.id, name="answers", checked=false)
                             label(for=i.id)=i.libelle
-            button(type='submit') Valider
+            if question.etape_id == 9 && question.id == 2
+                style.
+                    button{
+                        display: block;
+                        margin: auto;
+                        margin-top: 40px;
+                    }
+                button(type='submit') Flasher
+            else
+                button(type='submit') Valider

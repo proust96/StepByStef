@@ -5,6 +5,14 @@ block etape_content
         p=question.question_libelle
         form(method='GET' action='/questions/validation')
             each i in question.question_options
-                input(type="radio", value=i.id, id=i.id, name="answers", checked=false)
-                label(for=i.id)=i.libelle
+                if question.etape_id == 9
+                    .radiogroup_check
+                        input(type="checkbox", value=i.id, id=i.id, name="answers", checked=false)
+                        label(for=i.id)
+                            img(src=i.src)
+                            p=i.libelle
+                else
+                    .radiogroup
+                        input(type="radio", value=i.id, id=i.id, name="answers", checked=false)
+                        label(for=i.id)=i.libelle
             button(type='submit') Valider

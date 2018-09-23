@@ -28,6 +28,40 @@
              "libelle":"Je dois me stationner en marche avant"}
         ],
         "reponse":"B"
-     }
+     },
+     {
+         "id":1,
+         "etape_id":9,
+         "question_libelle":"Quels sont les risques présent dans un local de charge ?",
+         "question_options":[
+             {"id":"A",
+              "libelle":"Risque d'explosion (atmosphère explosive)",
+            "src":"/public/img/picto1.jpg"},
+              {"id":"B",
+              "libelle":"Risque électrique",
+              "src":"/public/img/picto2.jpg"},
+              {"id":"C",
+              "libelle":"Risque de brûlure chimique",
+              "src":"/public/img/picto3.jpg"},
+              {"id":"D",
+              "libelle":"Risque radioactif",
+              "src":"/public/img/picto4.jpg"}
+         ],
+         "reponse":"A,B,C"
+      },
+      {
+          "id":2,
+          "etape_id":9,
+          "question_libelle":"Quels sont les risques présent dans un local de charge",
+          "question_options":[
+              {"id":"A",
+               "libelle":"Je dois me stationner dans le sens où je me sens le plus à l'aise"},
+               {"id":"B",
+               "libelle":"Je dois me stationner en marche arrière"},
+               {"id":"C",
+               "libelle":"Je dois me stationner en marche avant"}
+          ],
+          "reponse":"B"
+       }
 ]
 }

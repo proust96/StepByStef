@@ -82,7 +82,7 @@ body{
     padding: 5px;
     margin: 5px;
 }
-.signin_form button{
+button{
     margin-top: 20px;
     padding: 8px;
     background-color: #00A8EC;
@@ -92,6 +92,7 @@ body{
     font-size: 0.95em;
     color: white;
     font-weight: initial;
+    cursor: pointer;
 }
 .template_header{
     height: 50px;
@@ -122,4 +123,23 @@ color: #0082D1;
 .images_correction img{
     height: 400px;
     margin: 30px; 
+}
+.content_flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.radiogroup_check{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.radiogroup_check img{
+    height: 60px;
+    display: inline-block;
+}
+.radiogroup_check p{
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: bottom;
 }

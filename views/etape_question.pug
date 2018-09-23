@@ -1,6 +1,12 @@
 extends etape.pug
 
 block etape_content
+    style.
+        body::before {
+            width:0;
+            height:0;
+        }
+
     .etape_content  
         p=question.question_libelle
         form(method='GET' action='/questions/validation')

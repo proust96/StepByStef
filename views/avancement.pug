@@ -4,7 +4,11 @@ doctype html
 html
     head
         title=titre
-    
+        style.
+            body::before {
+                width:0;
+                height:0;
+            }
     body
         .template_header.template_header_avancement
             img(src="/public/img/logo.jpg")
@@ -15,24 +19,40 @@ html
                     img(src="/public/img/11pourcent.jpg")
                 else if user.etape_actuelle == 9
                     img(src="/public/img/88pourcent.jpg")
+                else if user.etape_actuelle == 10
+                    img(src="/public/img/100pourcent.jpg")
         block content
             .top-container_avancement.top-container
                 .container
                     each etape in etapes
                         if user.etape_actuelle == 1 && etape.id === 1
-                            .etape-item-clicable.etape-item
-                                p=etape.id
-                                a(href="/etape/1")=etape.titre
+                            a(href="/etape/1")
+                                .etape-item-clicable.etape-item
+                                    p=etape.id
+                                    .titre=etape.titre
                         else if user.etape_actuelle === 8 && etape.id===2
-                            .etape-item-clicable.etape-item
-                                p=etape.id
-                                a(href="/avancement/9")=etape.titre
+                            a(href="/avancement/9")
+                                .etape-item-clicable.etape-item
+                                    p=etape.id
+                                    .titre=etape.titre
                         else if user.etape_actuelle === 9 && etape.id===9
-                            .etape-item-clicable.etape-item
-                                p=etape.id
-                                a(href="/etape/9")=etape.titre
+                            a(href="/etape/9")
+                                .etape-item-clicable.etape-item
+                                    p=etape.id
+                                    .titre=etape.titre
                         else
-                            .etape-item
-                                p=etape.id
-                                a=etape.titre
+                            if user.etape_actuelle == 8
+                                if etape.id <= 2
+                                    .etape-item.etape-item-done
+                                        p=etape.id
+                                        .titre=etape.titre
+                                else
+                                    .etape-item
+                                        p=etape.id
+                                        .titre=etape.titre
+                            else
+                                if etape.id < user.etape_actuelle
+                                    .etape-item.etape-item-done
+                                        p=etape.id
+                                        .titre=etape.titre
             

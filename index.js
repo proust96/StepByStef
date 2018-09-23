@@ -8,7 +8,8 @@ var export_route = require('./routes/export.js');
 var avancement = require('./routes/avancement.js');
 var questions = require('./routes/questions.js');
 var corrections = require('./routes/corrections.js');
-var connexion = require('./routes/connexion.js')
+var connexion = require('./routes/connexion.js');
+var rhService = require('./routes/rhService.js');
 
 var app = express();
 app.use(session({secret:'XASDASDA'}));
@@ -27,6 +28,8 @@ app.get('/', function(req, res){
  });
 
 app.use('/connexion',connexion)
+
+app.use('/rhService',rhService)
 
 app.use('/login', login);
 

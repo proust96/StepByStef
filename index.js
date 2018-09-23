@@ -7,7 +7,8 @@ var etape = require('./routes/etape.js');
 var export_route = require('./routes/export.js');
 var avancement = require('./routes/avancement.js');
 var questions = require('./routes/questions.js');
-var corrections = require('./routes/corrections.js')
+var corrections = require('./routes/corrections.js');
+var connexion = require('./routes/connexion.js')
 
 var app = express();
 app.use(session({secret:'XASDASDA'}));
@@ -22,8 +23,10 @@ var ssn;
 
 
 app.get('/', function(req, res){
-    res.render('accueil');
+    res.render('connexion');
  });
+
+app.use('/connexion',connexion)
 
 app.use('/login', login);
 

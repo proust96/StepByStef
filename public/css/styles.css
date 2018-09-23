@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    height: 100%;
     font-family: Arial;
     
 }
@@ -20,6 +21,18 @@ body{
     text-align: center!important;
     padding-top: 50px;
     width: 50%;
+}
+
+.connexion-images{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.connexion-images-item{ 
+    margin: 50px;
 }
 
 .etape-item a{

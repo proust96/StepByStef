@@ -15,16 +15,18 @@ block etape_content
             //    after the API code downloads.
             var player;
             console.log(etape.video_src);
-            function onYouTubeIframeAPIReady() {
-                player = new YT.Player('player', {
-                height: '360',
-                width: '640',
-                videoId: "#{etape.video_src}",
-                events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
+            if(etape.video_src){
+                function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('player', {
+                    height: '360',
+                    width: '640',
+                    videoId: "#{etape.video_src}",
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                    });
                 }
-                });
             }
 
             function onPlayerReady(event) {

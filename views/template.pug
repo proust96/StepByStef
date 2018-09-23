@@ -3,7 +3,6 @@ link(href='/public/css/styles.css', rel='stylesheet')
 mixin header()
     .template_header
         img(src="/public/img/logo.jpg")
-        h1 Step by Stef
 
 mixin footer()
     .template_footer
@@ -13,6 +12,7 @@ doctype html
 html
     head
         title=titre
+    
     body
         +header()
         block content

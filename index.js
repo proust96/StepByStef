@@ -53,6 +53,10 @@ app.get('/signature', function(req, res){
   res.render('signature');
 });
 
+app.get('/flasher', function(req, res){
+  res.render('flasher');
+});
+
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');

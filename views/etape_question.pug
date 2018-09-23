@@ -12,29 +12,57 @@ block etape_content
 
     .etape_content  
         p=question.question_libelle
-        form(method='GET' action='/questions/validation')
-            if question.etape_id == 9 && question.id == 2
-                each val in question.question_images 
-                    img(src=val,width="250px")
-            else
-                each i in question.question_options
-                    if question.etape_id == 9
-                        .radiogroup_check
-                            input(type="checkbox", value=i.id, id=i.id, name="answers", checked=false)
-                            label(for=i.id)
-                                img(src=i.src)
-                                p=i.libelle
-                    else
-                        .radiogroup
-                            input(type="radio", value=i.id, id=i.id, name="answers", checked=false)
-                            label(for=i.id)=i.libelle
-            if question.etape_id == 9 && question.id == 2
-                style.
-                    button{
-                        display: block;
-                        margin: auto;
-                        margin-top: 40px;
-                    }
-                button(type='submit') Flasher
-            else
-                button(type='submit') Valider
+        if question.etape_id == 9 && question.id == 2
+            form(method='GET' action='/flasher')
+                if question.etape_id == 9 && question.id == 2
+                    each val in question.question_images 
+                        img(src=val,width="250px")
+                else
+                    each i in question.question_options
+                        if question.etape_id == 9
+                            .radiogroup_check
+                                input(type="checkbox", value=i.id, id=i.id, name="answers", checked=false)
+                                label(for=i.id)
+                                    img(src=i.src)
+                                    p=i.libelle
+                        else
+                            .radiogroup
+                                input(type="radio", value=i.id, id=i.id, name="answers", checked=false)
+                                label(for=i.id)=i.libelle
+                if question.etape_id == 9 && question.id == 2
+                    style.
+                        button{
+                            display: block;
+                            margin: auto;
+                            margin-top: 40px;
+                        }
+                    button(type='submit') Flasher
+                else
+                    button(type='submit') Valider
+        else
+            form(method='GET' action='/questions/validation')
+                if question.etape_id == 9 && question.id == 2
+                    each val in question.question_images 
+                        img(src=val,width="250px")
+                else
+                    each i in question.question_options
+                        if question.etape_id == 9
+                            .radiogroup_check
+                                input(type="checkbox", value=i.id, id=i.id, name="answers", checked=false)
+                                label(for=i.id)
+                                    img(src=i.src)
+                                    p=i.libelle
+                        else
+                            .radiogroup
+                                input(type="radio", value=i.id, id=i.id, name="answers", checked=false)
+                                label(for=i.id)=i.libelle
+                if question.etape_id == 9 && question.id == 2
+                    style.
+                        button{
+                            display: block;
+                            margin: auto;
+                            margin-top: 40px;
+                        }
+                    button(type='submit') Flasher
+                else
+                    button(type='submit') Valider

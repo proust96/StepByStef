@@ -1,0 +1,13 @@
+extends template.pug
+
+block content
+    style.
+        body{
+            text-align:center;
+        }
+        .qrc{
+            margin-top:60px;
+        }
+    script.
+        setTimeout(function(){ window.location.replace("/questions/validation"); }, 2000);
+    img(src="../public/img/qrcode.jpg").qrc

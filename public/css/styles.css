@@ -164,9 +164,9 @@ color: #0082D1;
     flex-direction: row;
     flex-wrap: wrap;
     flex-flow: wrap;
-    align-content: center;
     justify-content: center;
     height: calc(100vh - 170px);
+    align-content: initial;
 }
 .etape-item {
     width: 250px;

@@ -42,6 +42,11 @@ app.use('/avancement', avancement);
 
 app.use('/corrections', corrections);
 
+app.get('/download', function(req, res){
+  var file = __dirname + '/public/files/export_henri-pol.pdf';
+  res.download(file);
+});
+
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');

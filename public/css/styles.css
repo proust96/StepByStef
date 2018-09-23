@@ -94,7 +94,7 @@ button{
     float: left;
 }
 .template_header h1{
-margin-left: 20px;
+margin-left: 50px;
 text-transform: uppercase;
 font-size: 1.6em;
 color: #0082D1;
@@ -245,3 +245,6 @@ body::before {
     height:100%;
     background-color: rgb(220,220,220);
   }
+.etape_content{
+    text-align: center;
+}

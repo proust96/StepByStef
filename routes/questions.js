@@ -14,7 +14,7 @@ router.get('/', function(req, res){
     let e = ssn.user.etape_actuelle;
     let q = ssn.user.question_actuelle;
 
-    res.render('etape_question', {question:questions.questions.filter(x => x.etape_id == e && x.id == q)[0]});
+    res.render('etape_question', {question:questions.questions.filter(x => x.etape_id == e && x.id == q)[0], titre:ssn.user.titre_en_cours});
     
 });
 
@@ -44,11 +44,11 @@ router.get('/validation', function(req,res){
             ssn.user.question_actuelle = 2;
         }
         ssn.user.rate = false;
-        res.render('correction', {ok:true, correction:correc});
+        res.render('correction', {ok:true, correction:correc, titre:ssn.user.titre_en_cours});
     }
     else{
         ssn.user.rate = true;
-        res.render('correction', {ok:false, correction:correc});
+        res.render('correction', {ok:false, correction:correc, titre:ssn.user.titre_en_cours});
     }
 });
 

@@ -12,11 +12,14 @@ router.get('/:etapeId', function(req, res){
     ssn = req.session;
     var etapeId = req.params.etapeId;
     var etape = etapes.etapes.filter(x => x.id == etapeId)[0];
+    console.log(etapeId);
     if (etapeId == 9){
+        ssn.user.titre_en_cours = etape.titre;
         res.redirect('/questions');
     }
     else{
-        res.render('etape_video',{etape:etape});
+        ssn.user.titre_en_cours = etape.titre;
+        res.render('etape_video',{etape:etape, titre:etape.titre});
     }
     
 });

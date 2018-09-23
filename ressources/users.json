@@ -9,6 +9,7 @@
         "question_actuelle": 1,
         "etapes_completees":[],
         "rate": false,
-        "fini": false
+        "fini": false,
+        "titre_en_cours": ""
     }
 ]

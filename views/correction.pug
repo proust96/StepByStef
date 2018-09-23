@@ -12,17 +12,19 @@ block etape_content
 
     script.
         //alert("#{ok}");
-    .etape_content  
-        p=correction.reponse
     .images_correction
         if ok
             .message-ok
                 p TRÈS BIEN
+            .etape_content  
+                p=correction.reponse
             each val in correction.images_ok
                 img(src=val)
         else
             .message-erreur
                 p MAL REPONDU
+            .etape_content  
+                p=correction.reponse
             each val in correction.images_ko
                 img(src=val)
     form(method='POST' action='/corrections')

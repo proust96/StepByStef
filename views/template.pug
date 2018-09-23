@@ -4,10 +4,6 @@ mixin header()
     .template_header
         img(src="/public/img/logo.jpg")
 
-mixin footer()
-    .template_footer
-        p Team yellow
-
 doctype html
 html
     head
@@ -16,7 +12,6 @@ html
     body
         +header()
         block content
-        +footer()
 
 
 

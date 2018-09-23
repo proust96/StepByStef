@@ -47,12 +47,12 @@
               "libelle":"Risque radioactif",
               "src":"/public/img/picto4.jpg"}
          ],
-         "reponse":"A,B,C"
+         "reponse":["A","B","C"]
       },
       {
           "id":2,
           "etape_id":9,
-          "question_libelle":"Quels sont les risques présent dans un local de charge",
+          "question_libelle":"Le local à charge est équipé d'un moyen de secours appelé le rince oeil",
           "question_options":[
               {"id":"A",
                "libelle":"Je dois me stationner dans le sens où je me sens le plus à l'aise"},
@@ -61,7 +61,8 @@
                {"id":"C",
                "libelle":"Je dois me stationner en marche avant"}
           ],
-          "reponse":"B"
+          "question_images":["/public/img/re1.jpg", "/public/img/re2.png"],
+          "reponse":""
        }
 ]
 }

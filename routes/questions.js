@@ -25,7 +25,8 @@ router.get('/validation', function(req,res){
     let answer = req.query.answers;
     let question = questions.questions.filter(x => x.etape_id == e && x.id == q)[0];
     let correc = corrections.corrections.filter(x => x.etape_id == e && x.id == q)[0];
-    if (question.reponse === answer){
+    console.log(answer);
+    if (question.reponse === answer || ssn.user.etape_actuelle == 9){
         if (questions.questions.filter(x => x.etape_id == e).length == q){
             if (ssn.user.etape_actuelle != 9)
             {
@@ -34,6 +35,9 @@ router.get('/validation', function(req,res){
                 ssn.user.etapes_completees = [1,2,3,4,5,6,7,8];
             }else{
                 ssn.user.fini = true;
+                ssn.user.etape_actuelle = 10;
+                ssn.user.question_actuelle = 1;
+                ssn.user.etapes_completees = [1,2,3,4,5,6,7,8,9];
             }
         }
         else{
